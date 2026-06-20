@@ -1,6 +1,6 @@
-import image1 from "../assets/artist image/image1.png";
-import image2 from "../assets/artist image/image2.png";
-import image3 from "../assets/artist image/image3.png";
+import image1 from "../assets/artist image/image1.webp";
+import image2 from "../assets/artist image/image2.webp";
+import image3 from "../assets/artist image/image3.webp";
 import image4 from "../assets/artist image/image4.png";
 import image5 from "../assets/artist image/image5.png";
 

@@ -1,0 +1,124 @@
+.artist-container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+  padding: 7rem 2rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.artist-container > h1 {
+  grid-column: 1 / -1;
+  color: white;
+  font-size: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.artist-container > h3 {
+  grid-column: 1 / -1;
+  color: white;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.artist-card {
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.artist-card img {
+  width: 100%;
+  height: 40rem;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.artist-card h2 {
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  padding: 1.5rem 1.5rem 0.5rem;
+}
+
+.artist-card h3 {
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #555;
+  padding: 0 1.5rem;
+}
+
+.artist-card p {
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  padding: 1rem 1.5rem 2rem;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .artist-container {
+    grid-template-columns: 1fr;
+    padding: 6rem 1rem 2rem;
+  }
+
+  .artist-container > h1 {
+    font-size: 3rem;
+  }
+
+  .artist-container > h3 {
+    font-size: 1.5rem;
+  }
+
+  .artist-card img {
+    height: 30rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .artist-container > h1 {
+    font-size: 2.5rem;
+  }
+
+  .artist-container > h3 {
+    font-size: 1.3rem;
+  }
+
+  .artist-card img {
+    height: 25rem;
+  }
+
+  .artist-card h2 {
+    font-size: 2rem;
+  }
+
+  .artist-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .artist-card p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 22.63rem) {
+  .artist-container {
+    margin-top: 15rem;
+  }
+  .artist-card img {
+    height: 23rem;
+  }
+}

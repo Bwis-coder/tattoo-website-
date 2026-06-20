@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #faf5f5;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: #e63946;
+}
+
+html {
+  font-size: 62.5%;
+}

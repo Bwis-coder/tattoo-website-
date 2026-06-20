@@ -1,0 +1,126 @@
+.services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 4.9rem;
+  background-image: url("/services.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(2, 0, 0);
+  color: white;
+  margin-top: 2.5rem;
+  padding: 3rem;
+  gap: 2rem;
+  width: 50%;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.hero-section h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.hero-section h3 {
+  font-size: 2.4rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.price-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.price-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.price-card h1 {
+  font-size: 2rem;
+}
+
+.price-card h3 {
+  font-size: 1.5rem;
+  color: orange;
+}
+
+.booking-section {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 4rem 2rem;
+  margin: 2rem;
+  border-radius: 10px;
+}
+
+.booking-section h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.booking-grid h3 {
+  background-color: white;
+  color: black;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.booking-grid h3:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 37.5rem) {
+  .hero-section {
+    width: 90%;
+    padding: 2rem 1rem;
+    margin: 1rem auto;
+  }
+
+
+  .hero-section h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .booking-section h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 22.63rem) {
+ .services-container {
+    margin-top: 13rem;
+  }
+}
+
+

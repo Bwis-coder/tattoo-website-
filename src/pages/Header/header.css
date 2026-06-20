@@ -1,0 +1,88 @@
+.header-container {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  top: 0;
+  background-color: black;
+}
+.art-info button {
+  padding: 1.2rem 3rem;
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.art-info button:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  transform: translateY(-3px);
+}
+
+.art-info button:active {
+  transform: translateY(0);
+}
+
+
+.header-container a.active {
+  color: orange;
+  border-bottom: 0.4rem solid orange;
+  padding-bottom: 0.3rem;
+}
+
+/* Tablet */
+@media (max-width: 37.31rem) {
+  .header-container {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+
+  .header-container button {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 26.19rem) {
+  .header-container {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+  }
+
+  .header-container button {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+}
+
+@media (max-width: 23.19rem) {
+  .header-container {
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .header-container button {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+}
